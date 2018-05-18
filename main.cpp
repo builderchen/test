@@ -10,8 +10,6 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    MainWindow w;
-//    w.show();
 
     //构建一个4行，2列的项模型
     QStandardItemModel model(4, 2);

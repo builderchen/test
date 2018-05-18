@@ -13,10 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     delegate.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     delegate.h
 
 FORMS    += mainwindow.ui
