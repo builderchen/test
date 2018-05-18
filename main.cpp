@@ -1,4 +1,3 @@
-#include "mainwindow.h"
 #include <QApplication>
 #include <QHeaderView>
 #include <QItemSelectionModel>

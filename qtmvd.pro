@@ -18,4 +18,4 @@ SOURCES += main.cpp\
 HEADERS  += \
     delegate.h
 
-FORMS    += mainwindow.ui
+FORMS    +=
