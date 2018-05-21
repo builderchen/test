@@ -8,10 +8,12 @@
 
 int main(int argc, char *argv[])
 {
+#define ROWS   2
+#define COLS    2
     QApplication a(argc, argv);
 
     //构建一个4行，2列的项模型
-    QStandardItemModel model(8, 4);
+    QStandardItemModel model(ROWS, COLS);
     //声明一个TableView
     QTableView tableView;
     //绑定模型
@@ -25,8 +27,8 @@ int main(int argc, char *argv[])
     tableView.horizontalHeader()->setStretchLastSection(true);
 
     //初始化Model
-    for (int row = 0; row < 8; ++row) {
-        for (int column = 0; column < 4; ++column) {
+    for (int row = 0; row < ROWS; ++row) {
+        for (int column = 0; column < COLS; ++column) {
             QModelIndex index = model.index(row, column, QModelIndex());
             model.setData(index, QVariant((row+1) * (column+1)));
         }
