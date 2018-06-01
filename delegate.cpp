@@ -8,6 +8,7 @@ SpinBoxDelegate::SpinBoxDelegate(QObject *parent)
 {
 }
 
+
 //返回一个编辑控件，用来编辑指定项的数据
 QWidget *SpinBoxDelegate::createEditor(QWidget *parent,
     const QStyleOptionViewItem &/* option */,
@@ -21,6 +22,7 @@ QWidget *SpinBoxDelegate::createEditor(QWidget *parent,
     return editor;
 }
 
+
 //将Model中数据赋值到控件上
 void SpinBoxDelegate::setEditorData(QWidget *editor,
                                     const QModelIndex &index) const
@@ -32,6 +34,7 @@ void SpinBoxDelegate::setEditorData(QWidget *editor,
     spinBox->setValue(value);
 }
 
+
 //设定模型数据，根据指定项中对应编辑控件的数据
 void SpinBoxDelegate::setModelData(QWidget *editor, QAbstractItemModel *model,
                                    const QModelIndex &index) const
@@ -42,6 +45,7 @@ void SpinBoxDelegate::setModelData(QWidget *editor, QAbstractItemModel *model,
     //设置模型的数据
     model->setData(index, value, Qt::EditRole);
 }
+
 
 //更新编辑框几何形状
 void SpinBoxDelegate::updateEditorGeometry(QWidget *editor,

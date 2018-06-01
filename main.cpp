@@ -8,11 +8,11 @@
 
 int main(int argc, char *argv[])
 {
-#define ROWS   2
-#define COLS    2
+#define ROWS   10
+#define COLS   5
     QApplication a(argc, argv);
 
-    //构建一个4行，2列的项模型
+    //构建一个n行，m列的项模型
     QStandardItemModel model(ROWS, COLS);
     //声明一个TableView
     QTableView tableView;
