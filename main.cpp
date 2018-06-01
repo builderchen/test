@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[])
 {
-#define ROWS   2
+#define ROWS   12
 #define COLS    2
     QApplication a(argc, argv);
 
